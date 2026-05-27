@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>StudioKiss | Главная</title>
+    <meta name="description" content="StudioKiss - организация мероприятий, дизайн интерьеров, event-агентство. Создаем незабываемые события и стильные пространства.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Studio<span>Kiss</span></a>
+                <p class="logo-tag">event & interior</p>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-contacts">
+                <a href="tel:+78121234567" class="phone"><i class="fas fa-phone-alt"></i> +7 (812) 123-45-67</a>
+                <a href="mailto:hello@studiokiss.ru" class="email"><i class="fas fa-envelope"></i> hello@studiokiss.ru</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="mobile-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- НОВЫЙ ГЛАВНЫЙ БАННЕР - центрированный, без картинки -->
+        <section class="hero">
+            <div class="container hero-container-center">
+                <div class="hero-content-center">
+                    <h1>Превратим вашу идею <span class="accent">в идеальное событие</span></h1>
+                    <p>Организация мероприятий, декорации, интерьерные студии — всё для вашего праздника и стиля.</p>
+                    <a href="#order-form-section" class="btn-primary">Заказать мероприятие <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ГАЛЕРЕЯ РАБОТ -->
+        <section class="gallery-carousel">
+            <div class="container">
+                <h2 class="section-title">Галерея работ</h2>
+                <p class="section-subtitle">Наши проекты — вдохновение и стиль</p>
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide"><img src="https://img.restoclub.ru/uploads/article/f/6/9/7/f697a9c2a94c3567fc5fc05702c02ff2_w828_h552--big.jpg" alt="Проект 1"><div class="slide-caption">Корпоратив Kosmos</div></div>
+                        <div class="carousel-slide"><img src="https://static.tildacdn.com/tild6139-3466-4433-a564-316666376137/PPu1wH0hqDA.jpg" alt="Проект 2"><div class="slide-caption">Свадебное оформление</div></div>
+                        <div class="carousel-slide"><img src="https://snova-prazdnik.ru/wp-content/uploads/2015/07/fotovech_profi_03.jpg" alt="Проект 3"><div class="slide-caption">День рождения</div></div>
+                        <div class="carousel-slide"><img src="https://sun-inside.me/wp-content/uploads/2019/03/2000-02cc88fc42a0d07aad03c0f85d4e86da.jpg" alt="Проект 4"><div class="slide-caption">Интерьерная студия Loft</div></div>
+                        <div class="carousel-slide"><img src="https://img3.foto.by/photos/3ea28/df73a/58ad3/c453eddce389231df.jpg" alt="Проект 5"><div class="slide-caption">Выставка Design Week</div></div>
+                    </div>
+                    <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </section>
+
+        <!-- Блок меню (О нас, Наши услуги, Контакты) -->
+        <section class="quick-nav">
+            <div class="container quick-nav-grid">
+                <a href="about.html" class="quick-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>О нас</h3>
+                    <p>История, команда, ценности</p>
+                </a>
+                <a href="services.html" class="quick-card">
+                    <i class="fas fa-crown"></i>
+                    <h3>Наши услуги</h3>
+                    <p>от полного оформления до декора</p>
+                </a>
+                <a href="contacts.html" class="quick-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Контакты</h3>
+                    <p>Свяжитесь с нами прямо сейчас</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- НАШИ УСЛУГИ (не более 3) -->
+        <section class="services-preview">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img"><img src="https://respace.su/upload/medialibrary/458/9zxlf10fptieuz6um32i610vqwon6ucq.jpg" alt="Event management"></div>
+                        <h3>Event-менеджмент</h3>
+                        <p>Полная организация мероприятий под ключ</p>
+                        <div class="price">от 50 000 ₽</div>
+                        <a href="services.html" class="btn-outline">Подробнее</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="https://amournsk.ru/upload/img/18-05-2018/24-18-05-2018.jpg" alt="Decor"></div>
+                        <h3>Декорации и флористика</h3>
+                        <p>Уникальный декор, цветочные композиции</p>
+                        <div class="price">от 25 000 ₽</div>
+                        <a href="services.html" class="btn-outline">Подробнее</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img"><img src="https://cdn-st2.vigbo.com/u31817/42502/blog/3400442/4792764/62372210/1000-Stasya-Dementyeva-f03dba3246b576e92c252e613f1d39eb.jpg" alt="Interior"></div>
+                        <h3>Интерьерные решения</h3>
+                        <p>Дизайн интерьеров и стилизация</p>
+                        <div class="price">от 80 000 ₽</div>
+                        <a href="services.html" class="btn-outline">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ИНТЕРЬЕРНЫЕ СТУДИИ (слайдер) -->
+        <section class="studios-slider">
+            <div class="container">
+                <h2 class="section-title">Интерьерные студии</h2>
+                <div class="studios-slider-container">
+                    <div class="studios-slider-track" id="studiosTrack">
+                        <div class="studio-slide">
+                            <h3>Студия "Минимализм"</h3>
+                            <p>Чистые линии, светлые тона, функциональность</p>
+                            <div class="studio-price">от 120 000 ₽</div>
+                        </div>
+                        <div class="studio-slide">
+                            <h3>Студия "Бохо-шик"</h3>
+                            <p>Этника, текстиль, уют и свобода</p>
+                            <div class="studio-price">от 95 000 ₽</div>
+                        </div>
+                        <div class="studio-slide">
+                            <h3>Студия "Лофт"</h3>
+                            <p>Индустриальный стиль, кирпич, металл</p>
+                            <div class="studio-price">от 150 000 ₽</div>
+                        </div>
+                        <div class="studio-slide">
+                            <h3>Студия "Арт-деко"</h3>
+                            <p>Роскошь, геометрия, благородство</p>
+                            <div class="studio-price">от 200 000 ₽</div>
+                        </div>
+                    </div>
+                    <button class="studios-prev" id="studiosPrev"><i class="fas fa-angle-left"></i></button>
+                    <button class="studios-next" id="studiosNext"><i class="fas fa-angle-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ФОРМА ЗАКАЗА -->
+        <section class="order-form" id="order-form-section">
+            <div class="container">
+                <h2 class="section-title">Заказать мероприятие</h2>
+                <form id="eventOrderForm" class="order-form-element">
+                    <div class="form-group">
+                        <label>Мероприятие</label>
+                        <select name="eventType" required>
+                            <option value="">Выберите тип</option>
+                            <option>Свадьба</option>
+                            <option>Корпоратив</option>
+                            <option>День рождения</option>
+                            <option>Выставка</option>
+                            <option>Фуршет</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>ФИО</label>
+                        <input type="text" name="fullname" placeholder="Иванова Анна Сергеевна" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" name="phone" placeholder="+7 (900) 123-45-67" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Электронная почта</label>
+                        <input type="email" name="email" placeholder="client@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Предполагаемая дата</label>
+                        <input type="date" name="eventDate" required>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block">Отправить заявку <i class="fas fa-paper-plane"></i></button>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">Studio<span>Kiss</span></div>
+                <p>Превращаем мечты в события</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Меню</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Реквизиты</h4>
+                <p>ИП Константинова Е.С.<br>ИНН 781234567890<br>ОГРНИП 3247801234567</p>
+                <p>г. Санкт-Петербург, Невский пр., 88</p>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-phone"></i> +7 (812) 123-45-67</p>
+                <p><i class="fas fa-envelope"></i> hello@studiokiss.ru</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 StudioKiss. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

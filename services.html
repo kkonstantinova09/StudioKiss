@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | StudioKiss</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header"><!-- аналогичный структуре (сокращенно для читаемости) -->
+        <div class="container header-container">
+            <div class="logo"><a href="index.html">Studio<span>Kiss</span></a></div>
+            <nav class="main-nav"><ul class="nav-list"><li><a href="index.html">Главная</a></li><li><a href="about.html">О нас</a></li><li><a href="services.html" class="active">Услуги</a></li><li><a href="contacts.html">Контакты</a></li></ul></nav>
+            <div class="header-contacts"><a href="tel:+78121234567"><i class="fas fa-phone-alt"></i> +7 (812) 123-45-67</a><a href="mailto:hello@studiokiss.ru"><i class="fas fa-envelope"></i> hello@studiokiss.ru</a></div>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="mobile-menu"><ul><li><a href="index.html">Главная</a></li><li><a href="about.html">О нас</a></li><li><a href="services.html">Услуги</a></li><li><a href="contacts.html">Контакты</a></li></ul></div>
+    </header>
+
+    <main>
+        <section class="page-hero"><div class="container"><h1>Наши услуги</h1><p>Выберите идеальное решение для вашего события</p></div></section>
+
+        <!-- ФИЛЬТРАЦИЯ -->
+        <div class="container filter-container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Все</button>
+                <button class="filter-btn" data-category="event">Event</button>
+                <button class="filter-btn" data-category="decor">Декор</button>
+                <button class="filter-btn" data-category="interior">Интерьер</button>
+            </div>
+        </div>
+
+        <!-- СПИСОК УСЛУГ с пагинацией -->
+        <div class="container services-full-list" id="servicesListContainer">
+            <div class="services-grid" id="servicesGrid"></div>
+            <div class="pagination" id="paginationControls"></div>
+        </div>
+    </main>
+
+    <footer class="footer"><div class="container footer-container"><div class="footer-col"><div class="footer-logo">Studio<span>Kiss</span></div><p>Превращаем мечты в события</p></div><div class="footer-col"><h4>Меню</h4><ul><li><a href="index.html">Главная</a></li><li><a href="about.html">О нас</a></li><li><a href="services.html">Услуги</a></li><li><a href="contacts.html">Контакты</a></li></ul></div><div class="footer-col"><h4>Реквизиты</h4><p>ИП Константинова Е.С.<br>ИНН 781234567890</p></div><div class="footer-col"><h4>Контакты</h4><p><i class="fas fa-phone"></i> +7 (812) 123-45-67</p><p><i class="fas fa-envelope"></i> hello@studiokiss.ru</p></div></div><div class="footer-bottom"><p>&copy; 2026 StudioKiss</p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>
